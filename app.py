@@ -6,7 +6,11 @@ import numpy as np
 import time
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
+import os
+import streamlit as st
 
+st.write("Current Directory:", os.getcwd())
+st.write("Files:", os.listdir())
 # Download NLTK data if not already downloaded
 try:
     nltk.data.find('tokenizers/punkt')
